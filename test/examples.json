@@ -1,0 +1,452 @@
+{
+    "/api/get-text": [
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A valid base64 encoded image."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "result": {
+                        "text": "a\n\u2018. Manas es 5 hereby dlecjuve [hor al fre\n\nVfovrnathDw- gubmitres by me in {re Q pp lesbian\nfem 1s Correct, Hut and vad. 2\nwit puerent me Su ppovbivs elocoments\n\nAs And  [AInew weguived.\u201d\n"
+                    },
+                    "success": true
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "An invalid base64 encoded image."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A non-image file encoded in base64."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        }
+    ],
+    "/api/get-bboxes": [
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A valid base64 image.",
+                    "bbox_type": "word"
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "result": {
+                        "bboxes": [
+                            {
+                                "x_max": 1700,
+                                "x_min": 0,
+                                "y_max": 574,
+                                "y_min": 0
+                            },
+                            {
+                                "x_max": 1506,
+                                "x_min": 45,
+                                "y_max": 198,
+                                "y_min": 80
+                            },
+                            {
+                                "x_max": 1506,
+                                "x_min": 45,
+                                "y_max": 198,
+                                "y_min": 80
+                            },
+                            {
+                                "x_max": 68,
+                                "x_min": 45,
+                                "y_max": 104,
+                                "y_min": 80
+                            },
+                            {
+                                "x_max": 68,
+                                "x_min": 45,
+                                "y_max": 104,
+                                "y_min": 80
+                            },
+                            {
+                                "x_max": 1506,
+                                "x_min": 94,
+                                "y_max": 198,
+                                "y_min": 87
+                            },
+                            {
+                                "x_max": 147,
+                                "x_min": 94,
+                                "y_max": 173,
+                                "y_min": 100
+                            },
+                            {
+                                "x_max": 392,
+                                "x_min": 244,
+                                "y_max": 169,
+                                "y_min": 109
+                            },
+                            {
+                                "x_max": 640,
+                                "x_min": 427,
+                                "y_max": 198,
+                                "y_min": 102
+                            },
+                            {
+                                "x_max": 694,
+                                "x_min": 678,
+                                "y_max": 160,
+                                "y_min": 136
+                            },
+                            {
+                                "x_max": 892,
+                                "x_min": 740,
+                                "y_max": 192,
+                                "y_min": 96
+                            },
+                            {
+                                "x_max": 1122,
+                                "x_min": 946,
+                                "y_max": 141,
+                                "y_min": 97
+                            },
+                            {
+                                "x_max": 1276,
+                                "x_min": 1180,
+                                "y_max": 138,
+                                "y_min": 87
+                            },
+                            {
+                                "x_max": 1389,
+                                "x_min": 1327,
+                                "y_max": 127,
+                                "y_min": 90
+                            },
+                            {
+                                "x_max": 1506,
+                                "x_min": 1428,
+                                "y_max": 128,
+                                "y_min": 93
+                            },
+                            {
+                                "x_max": 1619,
+                                "x_min": 203,
+                                "y_max": 406,
+                                "y_min": 144
+                            },
+                            {
+                                "x_max": 1619,
+                                "x_min": 203,
+                                "y_max": 402,
+                                "y_min": 144
+                            },
+                            {
+                                "x_max": 1619,
+                                "x_min": 203,
+                                "y_max": 284,
+                                "y_min": 144
+                            },
+                            {
+                                "x_max": 480,
+                                "x_min": 203,
+                                "y_max": 284,
+                                "y_min": 182
+                            },
+                            {
+                                "x_max": 804,
+                                "x_min": 575,
+                                "y_max": 232,
+                                "y_min": 173
+                            },
+                            {
+                                "x_max": 932,
+                                "x_min": 913,
+                                "y_max": 213,
+                                "y_min": 170
+                            },
+                            {
+                                "x_max": 1082,
+                                "x_min": 1020,
+                                "y_max": 213,
+                                "y_min": 189
+                            },
+                            {
+                                "x_max": 1171,
+                                "x_min": 1131,
+                                "y_max": 211,
+                                "y_min": 170
+                            },
+                            {
+                                "x_max": 1307,
+                                "x_min": 1237,
+                                "y_max": 212,
+                                "y_min": 164
+                            },
+                            {
+                                "x_max": 1386,
+                                "x_min": 1371,
+                                "y_max": 191,
+                                "y_min": 162
+                            },
+                            {
+                                "x_max": 1440,
+                                "x_min": 1408,
+                                "y_max": 216,
+                                "y_min": 161
+                            },
+                            {
+                                "x_max": 1619,
+                                "x_min": 1461,
+                                "y_max": 220,
+                                "y_min": 144
+                            },
+                            {
+                                "x_max": 1476,
+                                "x_min": 343,
+                                "y_max": 361,
+                                "y_min": 231
+                            },
+                            {
+                                "x_max": 461,
+                                "x_min": 343,
+                                "y_max": 361,
+                                "y_min": 265
+                            },
+                            {
+                                "x_max": 576,
+                                "x_min": 542,
+                                "y_max": 296,
+                                "y_min": 254
+                            },
+                            {
+                                "x_max": 819,
+                                "x_min": 645,
+                                "y_max": 302,
+                                "y_min": 258
+                            },
+                            {
+                                "x_max": 1072,
+                                "x_min": 975,
+                                "y_max": 296,
+                                "y_min": 241
+                            },
+                            {
+                                "x_max": 1203,
+                                "x_min": 1123,
+                                "y_max": 278,
+                                "y_min": 245
+                            },
+                            {
+                                "x_max": 1408,
+                                "x_min": 1278,
+                                "y_max": 274,
+                                "y_min": 235
+                            },
+                            {
+                                "x_max": 1476,
+                                "x_min": 1448,
+                                "y_max": 266,
+                                "y_min": 231
+                            },
+                            {
+                                "x_max": 1450,
+                                "x_min": 428,
+                                "y_max": 406,
+                                "y_min": 308
+                            },
+                            {
+                                "x_max": 523,
+                                "x_min": 428,
+                                "y_max": 378,
+                                "y_min": 334
+                            },
+                            {
+                                "x_max": 752,
+                                "x_min": 584,
+                                "y_max": 406,
+                                "y_min": 325
+                            },
+                            {
+                                "x_max": 873,
+                                "x_min": 805,
+                                "y_max": 372,
+                                "y_min": 318
+                            },
+                            {
+                                "x_max": 975,
+                                "x_min": 924,
+                                "y_max": 356,
+                                "y_min": 326
+                            },
+                            {
+                                "x_max": 1159,
+                                "x_min": 988,
+                                "y_max": 394,
+                                "y_min": 312
+                            },
+                            {
+                                "x_max": 1450,
+                                "x_min": 1225,
+                                "y_max": 348,
+                                "y_min": 308
+                            },
+                            {
+                                "x_max": 1117,
+                                "x_min": 382,
+                                "y_max": 471,
+                                "y_min": 396
+                            },
+                            {
+                                "x_max": 1117,
+                                "x_min": 382,
+                                "y_max": 471,
+                                "y_min": 396
+                            },
+                            {
+                                "x_max": 1117,
+                                "x_min": 382,
+                                "y_max": 471,
+                                "y_min": 396
+                            },
+                            {
+                                "x_max": 437,
+                                "x_min": 382,
+                                "y_max": 450,
+                                "y_min": 420
+                            },
+                            {
+                                "x_max": 618,
+                                "x_min": 531,
+                                "y_max": 448,
+                                "y_min": 414
+                            },
+                            {
+                                "x_max": 808,
+                                "x_min": 682,
+                                "y_max": 447,
+                                "y_min": 414
+                            },
+                            {
+                                "x_max": 1117,
+                                "x_min": 876,
+                                "y_max": 471,
+                                "y_min": 396
+                            }
+                        ]
+                    },
+                    "success": true
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "An invalid base64 encoded image.",
+                    "bbox_type": "word"
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A non-image file encoded in base64.",
+                    "bbox_type": "word"
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A valid base64 encoded image.",
+                    "bbox_type": "foo"
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid bbox_type."
+                    },
+                    "success": false
+                }
+            }
+        }
+    ]
+}
