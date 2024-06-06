@@ -87,7 +87,7 @@ For detailed API documentation, visit the [Postman Documentation](https://docume
   ```json
   {
     "base64_image": "base64_encoded_image_string",
-    "bbox_type": "word" // can be word, line, paragraph, block, or page
+    "text": "word" // can be word, line, paragraph, block, or page
   }
   ```
 
